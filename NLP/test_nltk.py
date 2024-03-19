@@ -67,7 +67,7 @@ emma = nltk.Text(corpus.gutenberg.words('austen-emma.txt'))
 emma.concordance('surprize')
 
 # %%
-macbeth_sents = gutenberg.sents('shakespeare-macbeth.txt')
+macbeth_sents = corpus.gutenberg.sents('shakespeare-macbeth.txt')
 
 longest_len = max(len(s) for s in macbeth_sents)
 [s for s in macbeth_sents if len(s) == longest_len]
